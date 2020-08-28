@@ -1,0 +1,22 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "command": [
+                "npm",
+                "start"
+            ],
+            "essential": true,
+            "mountPoints": [],
+            "name": "app",
+            "image": "docker.io/rogerterrazas/twined-frontend:1",
+            "memory": 400,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000
+                }
+            ]
+        }
+    ]
+}
